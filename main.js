@@ -1,6 +1,5 @@
 //Variables
 let precolor = prompt('Escribe un color'); //Prompt para seleccionar el color para dibujar
-//Mapeado de los colores (actualmente 16 colores)
 // Mapeado de los colores (actualmente 16 colores)
 const colores = `{
  "rojo": 1,
@@ -29,18 +28,18 @@ const colores = `{
 
 let colortradc0 = JSON.parse(colores);
 let colortradc1 = precolor.toLowerCase();
-let color = colortraduc0[colortradc1];
+let color = colortradc0[colortradc1];
 //Coordenadas X (Horizontal)
 let xmin = prompt('Escribe la coordenada X (horizontal) mínima para dibujar'); // Minimo 0
 let xmax = prompt('Escribe la coordenada X (horizontal) máxima para dibujar'); // Máximo 999 (tamaño actual máximo del mapa)
 //Coordenadas Y (Vertical)
 let ymin = prompt('Escribe la coordenada Y (vertical) mínima para dibujar'); // Mínimo 0
-let ymax = prompt('Escribe la coordenada Y (vertical) máxima para dibujar'); // Máximo 999
+let ymax = prompt('Escribe la coordenada Y (vertical) máxima para dibujar'); // Máximo 499
  
 let modhash;
 
-if(color !=undefined || color > 16) {
- if(xmin > 0 && xmax < 999 && ymin > 0 && xmax < 499) {
+if(color !=undefined || color < 16 && color > 0) {
+ if(xmin > 0 && xmax < 999 && ymin > 0 && ymax < 499) {
   function sleep (delay) {
   return new Promise(resolve => setTimeout(resolve, delay));
 }
