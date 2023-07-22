@@ -1,30 +1,32 @@
 //Variables
 let precolor = prompt('Escribe un color'); //Prompt para seleccionar el color para dibujar
 //Mapeado de los colores (actualmente 16 colores)
+// Mapeado de los colores (actualmente 16 colores)
 const colores = `{
- 'rojo': 1,
- 'naranja': 2,
- 'amarillo': 3,
- 'verde oscuro': 4,
- 'verde claro': 5,
- 'azul oscuro': 6,
- 'azul': 7,
- 'azul claro': 8,
- 'purpura oscuro': 9,
- 'morado oscuro': 9,
- 'purpura': 10,
- 'morado': 10,
- 'rosa claro': 11,
- 'rosa': 11,
- 'marrón': 12,
- 'marron': 12,
- 'café': 12,
- 'cafe': 12,
- 'negro': 13,
- 'gris': 14,
- 'gris claro': 15,
- 'blanco': 16
+ "rojo": 1,
+ "naranja": 2,
+ "amarillo": 3,
+ "verde oscuro": 4,
+ "verde claro": 5,
+ "azul oscuro": 6,
+ "azul": 7,
+ "azul claro": 8,
+ "purpura oscuro": 9,
+ "morado oscuro": 9,
+ "purpura": 10,
+ "morado": 10,
+ "rosa claro": 11,
+ "rosa": 11,
+ "marrón": 12,
+ "marron": 12,
+ "café": 12,
+ "cafe": 12,
+ "negro": 13,
+ "gris": 14,
+ "gris claro": 15,
+ "blanco": 16
 }`;
+
 let colortradc0 = JSON.parse(colores);
 let colortradc1 = precolor.toLowerCase();
 let color = colortraduc0[colortradc1];
